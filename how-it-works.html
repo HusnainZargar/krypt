@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How It Works — Krcypt by Muhammad Husnain Zargar</title>
+  
+  <meta name="title" content="How It Works — Krypt Password Breach & Crack-Time Checker">
+  <meta name="description" content="Learn how Krypt keeps your password 100% private. Full client-side calculations, HIBP k-anonymity, and local brute-force estimates without sending your password anywhere.">
+  <meta name="keywords" content="how it works, krypt, password privacy, pwned password, password strength, gpu cracking time, client-side security, cybersecurity tool">
+  <meta name="author" content="HackWithHusnain">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <meta property="og:title" content="How It Works — Krypt Password Breach & Crack-Time Checker">
+  <meta property="og:description" content="See how Krypt protects your passwords: client-side checks, k-anonymity API, and local brute-force estimations. 100% privacy, zero logging.">
+  <meta property="og:image" content="https://krypt.hackwithhusnain.com/static/krypt.png">
+  <meta property="og:url" content="https://krypt.hackwithhusnain.com/how-it-works.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How It Works — Krypt Password Breach & Crack-Time Checker">
+  <meta name="twitter:description" content="See how Krypt protects your passwords: client-side checks, k-anonymity API, and local brute-force estimations. 100% privacy, zero logging.">
+  <meta name="twitter:image" content="https://krypt.hackwithhusnain.com/static/krypt.png">
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="static/krypt.png">
+  <link rel="stylesheet" href="static/how-it-works.css">
+  <script src="static/how-it-works.js" defer></script>
+</head>
+<body class="text-white">
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div id="particles" aria-hidden="true"></div>
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/90 to-transparent border-b border-emerald-500/20">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="static/krypt.png" alt="krypt" class="w-10 h-10 rounded-lg object-cover" />
+        <div class="hidden sm:block">
+          <div class="font-bold text-emerald-400 text-xl">krypt</div>
+          <div class="text-xs text-slate-400">Password Breach & Crack-Time Checker</div>
+        </div>
+      </a>
+      <a href="index.html" class="link-anim text-emerald-400 font-medium">
+        ← Back to Tool
+      </a>
+    </nav>
+  </header>
+
+  <main class="min-h-screen flex flex-col items-center justify-center px-6 py-24">
+    <div class="max-w-4xl w-full">
+
+      <div class="text-center mb-12 card-anim">
+        <h1 class="text-4xl md:text-6xl font-extrabold neon-text glitch-text mb-4">
+          How Your Password Stays 100% Private
+        </h1>
+        <p class="text-xl muted max-w-2xl mx-auto">
+          No logs. No tracking. No full password ever leaves your device.
+        </p>
+      </div>
+
+      <div class="glass p-10 card-anim shadow-2xl">
+        <div class="space-y-10 text-lg leading-relaxed">
+
+          <div class="bg-black/40 rounded-2xl p-8 border border-emerald-500/30">
+            <h3 class="text-2xl font-bold text-emerald-400 mb-4 flex items-center gap-3">
+              <i class="fas fa-shield-alt text-3xl"></i>
+              Your Full Password Never Leaves Your Browser
+            </h3>
+            <p class="muted text-lg">
+              Every calculation — hashing, checking, estimating — happens <strong>entirely in your browser</strong>.<br>
+              We don’t have a server that sees your password. Ever.
+            </p>
+          </div>
+
+          <div class="bg-black/40 rounded-2xl p-8 border border-emerald-500/30">
+            <h3 class="text-2xl font-bold text-emerald-400 mb-4 flex items-center gap-3">
+              <i class="fas fa-user-secret text-3xl"></i>
+              k-Anonymity with HaveIBeenPwned (HIBP)
+            </h3>
+            <p class="muted">
+              We use Troy Hunt’s official <a href="https://haveibeenpwned.com/API/v3#PwnedPasswords" target="_blank" class="text-emerald-400 underline link-anim">HIBP k-anonymity API</a>:
+            </p>
+            <ol class="list-decimal list-inside muted mt-4 space-y-3 text-lg">
+              <li>Your password → SHA-1 hash (done in your browser)</li>
+              <li>Only the <strong>first 5 characters</strong> of the hash are sent to HIBP</li>
+              <li>HIBP returns hundreds of matching hash suffixes</li>
+              <li>We check locally if your full hash is in that list</li>
+            </ol>
+            <p class="mt-6 text-emerald-300 font-semibold">
+              Result: HIBP learns nothing about your actual password.<br>
+              You remain completely anonymous and safe.
+            </p>
+          </div>
+
+          <div class="bg-black/40 rounded-2xl p-8 border border-emerald-500/30">
+            <h3 class="text-2xl font-bold text-emerald-400 mb-4 flex items-center gap-3">
+              <i class="fas fa-calculator text-3xl"></i>
+              Brute-Force Estimator = Pure Client-Side Math
+            </h3>
+            <p class="muted text-lg">
+              No API calls. No data sent.<br>
+              Just counts your character types (lowercase, uppercase, numbers, symbols) and uses logarithmic math to estimate cracking time — all in your browser.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-12 text-center p-8 bg-emerald-500/10 rounded-2xl border border-emerald-500/30">
+          <p class="text-2xl font-bold text-emerald-400 mb-3">
+            Privacy First. Always.
+          </p>
+          <p class="muted text-lg">
+            Built by <strong>Muhammad Husnain Zargar</strong> • No tracking • No logs • Open source vibes
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center card-anim">
+        <a href="index.html" class="inline-block px-8 py-4 bg-emerald-500 text-black font-bold rounded-xl hover:scale-105 transition shadow-lg">
+          ← Back to Password Checker
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full text-center py-6 muted text-sm border-t border-white/5 mt-20">
+    © 2025 HackWithHusnain — Krypt: Password Breach & Crack-Time Checker
+  </footer>
+</body>
+</html>
