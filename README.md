@@ -51,11 +51,11 @@ Your password never leaves your browser, guaranteed.
 
 ---
 
-## 🔧 Installation (Local Setup)
+# 🔧 Installation (Local Setup)
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/YOUR_USERNAME/krypt.git
+git clone https://github.com/HusnainZargar/krypt.git
 cd krypt
 ```
 
@@ -98,7 +98,7 @@ All done locally.
 
 ---
 
-## 🧪 Security Notes
+# 🧪 Security Notes
 
 - Krypt never sends full hashes or passwords
 - Uses industry-standard k-anonymity
@@ -107,7 +107,7 @@ All done locally.
 
 ---
 
-## ❤️ Support
+# ❤️ Support
 
 If you find Krypt helpful, consider:
 
@@ -115,11 +115,11 @@ If you find Krypt helpful, consider:
 - 🐞 Reporting bugs
 - 🛠 Suggesting features
 
-## 📜 License
+# 📜 License
 
 MIT License — free to use, modify, and distribute.
 
-## ✨ Creator
+# ✨ Creator
 
 Muhammad Husnain Zargar (HackWithHusnain)
 Cybersecurity Researcher • Ethical Hacker • CTF Developer
