@@ -63,3 +63,28 @@ Shows:
   - No server processing
 
 Your password never leaves your browser, guaranteed.
+
+---
+
+## 🔧 Installation (Local Setup)
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/YOUR_USERNAME/krypt.git
+cd krypt
+```
+
+### 2️⃣ Open index.html in your browser
+
+No server needed — it works 100% client-side.
+
+### 🌐 Deployment
+
+You can deploy Krypt on:
+
+- ✔ Cloudflare Pages
+- ✔ GitHub Pages
+- ✔ Netlify
+- ✔ Vercel
+
+Just upload the folder — no backend required.
