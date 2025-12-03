@@ -12,9 +12,9 @@ Krypt uses secure SHA-1 k-anonymity, no logging, and local GPU-speed calculation
 
 ---
 
-🚀 Features
+# 🚀 Features
 
-🔐 1. Pwned Password Checker (1.2+ Billion Breached Passwords)
+## 🔐 1. Pwned Password Checker (1.2+ Billion Breached Passwords)
 
   - Uses SHA-1 hashing inside the browser
 
@@ -32,7 +32,7 @@ Displays:
 
   - ✔️ No breach found
 
-⚡ 2. GPU Brute-Force Time Estimator
+## ⚡ 2. GPU Brute-Force Time Estimator
 
 Estimate how long it would take to brute-force your password using:
 
@@ -54,7 +54,7 @@ Shows:
 
   - Fully client-side, zero connections to any server.
 
-🛡️ 3. Complete Privacy
+## 🛡️ 3. Complete Privacy
 
   - No password is stored
 
