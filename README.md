@@ -10,6 +10,8 @@ Krypt is a privacy-focused cybersecurity tool that lets users:
 
 Krypt uses secure SHA-1 k-anonymity, no logging, and local GPU-speed calculations — making it one of the safest free password-intelligence tools available.
 
+[![Live - krypt.hackwithhusnain.com](https://img.shields.io/badge/Krypt-LIVE-brightgreen?style=for-the-badge)](https://krypt.hackwithhusnain.com)
+
 ---
 
 # 🚀 Features
